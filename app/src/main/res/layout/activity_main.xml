@@ -1,0 +1,122 @@
+<ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity"
+android:id="@+id/view_switcher" >
+
+    <RelativeLayout
+        android:id="@+id/stock_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/darkgray"
+        tools:context=".MainActivity" >
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:drawSelectorOnTop="false" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/stock_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:paddingBottom="@dimen/padding"
+        android:background="@color/darkgray"
+        tools:context=".MainActivity" >
+
+        <TextView
+            android:id="@+id/symbol"
+            android:textSize="@dimen/sizeSymbol"
+            android:textStyle="bold"
+            style="@style/Text" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_below="@id/symbol"
+            android:textSize="@dimen/sizeName"
+            android:textColor="@color/gray"
+            style="@style/Text" />
+
+        <TextView
+            android:id="@+id/label_last_trade_price"
+            android:layout_below="@id/name"
+            android:text="@string/label_last_trade_price"
+            style="@style/Label" />
+
+        <TextView
+            android:id="@+id/last_trade_price"
+            android:layout_below="@id/name"
+            android:gravity="end"
+            style="@style/Text.Currency" />
+
+        <TextView
+            android:id="@+id/label_change"
+            android:layout_below="@id/label_last_trade_price"
+            android:text="@string/label_change"
+            style="@style/Label" />
+
+        <TextView
+            android:id="@+id/change"
+            android:paddingTop="@dimen/paddingHalf"
+            android:paddingBottom="@dimen/paddingHalf"
+            android:layout_below="@id/label_last_trade_price"
+            android:gravity="end"
+            style="@style/Text" />
+
+        <TextView
+            android:id="@+id/label_percent_change"
+            android:layout_below="@id/label_change"
+            android:text="@string/label_percent_change"
+            style="@style/Label" />
+
+        <TextView
+            android:id="@+id/percent_change"
+            android:paddingTop="@dimen/paddingHalf"
+            android:paddingBottom="@dimen/paddingHalf"
+            android:layout_below="@id/label_change"
+            android:gravity="end"
+            style="@style/Text" />
+
+        <TextView
+            android:id="@+id/label_days_low_price"
+            android:layout_below="@id/label_percent_change"
+            android:text="@string/label_days_low_price"
+            style="@style/Label" />
+
+        <TextView
+            android:id="@+id/days_low_price"
+            android:layout_below="@id/label_percent_change"
+            android:gravity="end"
+            style="@style/Text.Currency" />
+
+        <TextView
+            android:id="@+id/label_days_high_price"
+            android:layout_below="@id/label_days_low_price"
+            android:text="@string/label_days_high_price"
+            style="@style/Label" />
+
+        <TextView
+            android:id="@+id/days_high_price"
+            android:layout_below="@id/label_days_low_price"
+            android:gravity="end"
+            style="@style/Text.Currency" />
+
+    </RelativeLayout>
+
+</ViewSwitcher>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/padding"
+    android:paddingRight="@dimen/padding"
+    android:paddingTop="@dimen/paddingHalf"
+    android:paddingBottom="@dimen/paddingHalf">
+
+    <TextView
+        android:id="@+id/symbol"
+        android:textSize="@dimen/sizeSymbol"
+        android:textStyle="bold"
+        style="@style/Text" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_below="@id/symbol"
+        android:textSize="@dimen/sizeName"
+        android:textColor="@color/gray"
+        style="@style/Text" />
+
+</RelativeLayout>

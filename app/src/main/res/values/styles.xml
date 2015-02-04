@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/magenta</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:minHeight">@dimen/buttonHeight</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="Text">
+        <item name="android:layout_width">match_parent</item>
+
+    </style>
+
+    <style name="Label" parent="Text">
+        <item name="android:paddingTop">@dimen/paddingHalf</item>
+        <item name="android:paddingBottom">@dimen/paddingHalf</item>
+        <item name="android:textSize">@dimen/sizeCurrency</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Text.Currency">
+        <item name="android:paddingTop">@dimen/paddingHalf</item>
+        <item name="android:paddingBottom">@dimen/paddingHalf</item>
+        <item name="android:textSize">@dimen/sizeCurrency</item>
+        <item name="android:textColor">@color/magenta</item>
+
+    </style>
+
+    <style name="Label.PaddingTop">
+        <item name="android:paddingTop">@dimen/padding</item>
+    </style>
+
+</resources>
